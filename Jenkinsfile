@@ -15,7 +15,7 @@ pipeline {
                     sh '''
                         echo $DOCKER_LOGIN_PSW | docker login -u $DOCKER_LOGIN_USR --password-stdin
                         docker build -t pilet/java-base:latest .
-                        docker push pilet/uno-store:latest
+                        docker push pilet/java-base:latest
                     '''
                 }
             }
