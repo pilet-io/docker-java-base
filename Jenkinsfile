@@ -11,7 +11,7 @@ pipeline {
             }
             environment {
                 DOCKER_LOGIN = credentials('DOCKER_LOGIN')
-                VERSION = '24.17'
+                VERSION = '24.21'
             }
             steps {
                 sh '''
